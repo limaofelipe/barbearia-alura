@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Barbearia Alura - Contato</title>
+  </head>
+  <body>
+    <header>
+      <div class="caixa">
+        <h1>
+          <a href="/index.html"><img src="public/logo-branco.png" alt="Logo" class="logo-head"></a>
+        </h1>
+        <nav>
+          <ul>
+            <li class=""><a href="index.html">Home</a></li>
+            <li class=""><a href="produtos.html">Produtos</a></li>
+            <li class=""><a href="contato.html">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <form>
+        <label for="nome-completo">Nome completo</label>
+        <input
+          type="text"
+          id="nome-completo"
+          class="input-padrao"
+          required
+          placeholder="Seu Nome"
+        />
+
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          class="input-padrao"
+          required
+          placeholder="seuemail@dominio.com"
+        />
+
+        <label for="telefone">Telefone</label>
+        <input
+          type="tel"
+          id="telefone"
+          class="input-padrao"
+          class="input-padrao"
+          required
+          placeholder="(xx) xxxxx-xxxx"
+        />
+
+        <label for="mensagem">Mensagem</label>
+        <textarea cols="70" rows="10" id="mensagem" required></textarea>
+        
+        <fieldset>
+          <legend>Como prefere o nosso contato?</legend>
+          <label for="radio-email">
+            <input
+              type="radio"
+              name="contato"
+              value="Email"
+              id="radio-email"
+            />Email
+          </label>
+
+          <label for="radio-telefone">
+            <input
+              type="radio"
+              name="contato"
+              value="Email"
+              id="radio-telefone"
+            />Telefone
+          </label>
+
+          <label for="radio-whatsapp">
+            <input
+              type="radio"
+              name="contato"
+              value="Email"
+              id="radio-whatsapp"
+              checked
+            />Whatsapp
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Qual horário prefere ser Atendido?</legend>
+          <select>
+            <option>Manhã</option>
+            <option>Tarde</option>
+            <option>Noite</option>
+          </select>
+        </fieldset>
+
+        <label>
+          <input type="checkbox" class="checkbox" />Gostaria de receber nossas
+          novidades por Email?
+        </label>
+
+        <input type="submit" name="contato" value="Enviar formulário" class="enviar" />
+      </form>
+
+
+      <table>
+        <thead>
+          <tr>
+            <th>Dia</th>
+            <th>Horário</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>Segunda</td>
+            <td>8h-20h</td>
+          </tr>
+          
+          <tr>
+            <td>Terça</td>
+            <td>8h-20h</td>
+          </tr>
+
+          <tr>
+            <td>Quarta</td>
+            <td>8h-20h</td>
+          </tr>
+
+          <tr>
+            <td>Quinta</td>
+            <td>8h-20h</td>
+          </tr>
+
+          <tr>
+            <td>Sexta</td>
+            <td>8h-20h</td>
+          </tr>
+          
+          <!--As tabelas também nos oferecem a possibilidade de juntar células e montar um visual diferente. Por exemplo, quando uma linha, que deveria ter 5 células, passa a mostrar só "uma célula".
+          Esse efeito é conseguido através da propriedade colspan=X, onde X é o número de células que você quer agrupar.
+          Portanto, em uma tabela de 5 colunas, para ter uma célula única na linha, usamos um código assim:-->
+
+          <tr>
+            <td colspan="2">Sábados e Feriados 8h - 12h</td> 
+          </tr>
+
+        </tbody>
+      </table>
+    </main>
+
+    <footer>
+      <img src="public/logo-branco.png" alt="Logo barbearia" />
+      <p class="copyright">&copy; Copyright Barbearia Alura - 2019</p>
+    </footer>
+  </body>
+</html>
